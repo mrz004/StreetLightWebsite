@@ -20,10 +20,10 @@ const liteBubls = async () => {
     if (mapping.hasOwnProperty(key)) {
       if (feed[key] == 1) {
         mapping[key].title = "on";
-        mapping[key].src = "./imgs/light-on.png";
+        mapping[key].src = "imgs/light-on.png";
       } else {
         mapping[key].title = "off";
-        mapping[key].src = "./imgs/light-off.png";
+        mapping[key].src = "imgs/light-off.png";
       }
     }
   }
@@ -32,7 +32,7 @@ const liteBubls = async () => {
 setInterval(liteBubls, 500);
 
 liteBubls();
-
+/*
 bulbs.forEach((e, i) => {
   e.addEventListener("click", (event) => {
     const { target } = event;
@@ -48,3 +48,4 @@ bulbs.forEach((e, i) => {
     fetch(query).then((_) => liteBubls());
   });
 });
+*/
